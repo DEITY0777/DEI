@@ -1,0 +1,16 @@
+
+
+Invoke-WebRequest -Uri "http://localhost:3003/index.html?username=admin2" -Method GET -Headers @{"Cookie"="
+8o45lsiuw"; "X-Client"="Terminal"; "User-Agent"="PowerShell"}
+
+
+
+
+
+
+
+
+
+
+
+

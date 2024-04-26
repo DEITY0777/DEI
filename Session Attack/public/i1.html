@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza House</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="loggedInUser"></p> <!-- Display logged-in user here -->
+    </header>
+    
+    
+    <section id="home">
+        <h2>Welcome to Pizza House!</h2>
+        <p>Enjoy delicious pizzas made with love.</p>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="pizza-item">
+            <img src="pizza1.jpg" alt="Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>A classic pizza topped with pepperoni slices and mozzarella cheese.</p>
+            <p>$10</p>
+            <button class="buy-button" onclick="buyPizza('Pepperoni Pizza')">Buy</button> <!-- Added Buy button -->
+        </div>
+        <div class="pizza-item">
+            <img src="pizza2.jpg" alt="Pizza">
+            <h3>Veggie Supreme Pizza</h3>
+            <p>Loaded with assorted vegetables and melted cheese.</p>
+            <p>$12</p>
+            <button class="buy-button" onclick="buyPizza('Veggie Supreme Pizza')">Buy</button> <!-- Added Buy button -->
+        </div>
+        <!-- Add more pizza items here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Pizza Street, Cityville</p>
+        <p>Phone: 555-123-4567</p>
+        <p>Email: info@pizzahouse.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pizza House. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Function to handle buy action
+        function buyPizza(pizzaName) {
+            // Print order message to console
+            console.log(`Ordered ${pizzaName}`);
+        }
+    </script>
+</body>
+</html>
